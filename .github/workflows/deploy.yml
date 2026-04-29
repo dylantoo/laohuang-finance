@@ -20,7 +20,7 @@ jobs:
 
       - name: Install dependencies
         run: |
-          pip install mkdocs mkdocs-material mkdocs-glightbox
+          pip install mkdocs mkdocs-material mkdocs-glightbox mkdocs-git-revision-date-localized-plugin
 
       - name: Build site
         run: mkdocs build --clean -d site
