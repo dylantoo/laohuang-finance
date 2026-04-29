@@ -56,6 +56,24 @@
   border-radius: 6px;
 }
 
+/* 导航和标签栏的 emoji 大小修正 — 和旁边文字保持比例 */
+.md-nav__link .emoji,
+.md-nav__link emoji,
+.md-tabs__link .emoji,
+.md-tabs__link emoji,
+.md-nav__link > .twemoji,
+.md-tabs__link > .twemoji {
+  font-size: 1.1em !important;
+  vertical-align: -0.15em !important;
+}
+
+/* 侧边栏图标 */
+.md-nav__link svg,
+.md-tabs__link svg {
+  width: 1em !important;
+  height: 1em !important;
+}
+
 /* 导航标题加粗 */
 nav .md-nav__title {
   font-weight: 600;
