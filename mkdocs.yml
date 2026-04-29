@@ -87,7 +87,7 @@ markdown_extensions:
 
 # 导航（对应 Obsidian 知识库目录结构）
 nav:
-  - 🏠 首页: 00-首页.md
+  - 🏠 首页: index.md
   - 📚 基础理论:
     - 01-基础理论/00-目录.md
     - 经济周期: 01-基础理论/经济周期.md
