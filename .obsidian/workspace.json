@@ -183,6 +183,7 @@
   "active": "958962b2a029dd7b",
   "lastOpenFiles": [
     "site/assets/javascripts/glightbox.min.js",
+    "site/assets/stylesheets/glightbox.min.css",
     "site/search/search_index.json",
     "site/search",
     "site/知识库/05-方法论/建仓路线图模板/index.html",
@@ -192,8 +193,15 @@
     "site/06-读书笔记/00-目录/index.html",
     "site/06-读书笔记/00-目录",
     "site/06-读书笔记",
-    "site/05-方法论/混沌期生存法则/index.html",
     "site/assets/images/favicon.png",
+    "docs/03-实战复盘/2026-04-29-盘中分析.md",
+    "docs/03-实战复盘/2026-04-29-早报.md",
+    "docs/03-实战复盘/2026-04-28-收盘复盘.md",
+    "docs/03-实战复盘/2026-04-28-盘中分析.md",
+    "docs/03-实战复盘/2026-04-28-早报.md",
+    "docs/03-实战复盘/2026-04-29-收盘复盘.md",
+    "docs/03-实战复盘/2026-04-29-盘中分析-电子布vs词元.md",
+    "docs/index.md",
     "docs/04-个股研究/盈峰环境.md",
     "docs/05-方法论/个股分析流程.md",
     "docs/知识库/05-方法论/建仓路线图模板.md",
@@ -210,14 +218,6 @@
     "docs/04-个股研究/电连技术.md",
     "docs/04-个股研究/海大集团.md",
     "docs/04-个股研究/00-目录.md",
-    "docs/03-实战复盘/2026-04-29-早盘策略.md",
-    "docs/03-实战复盘/2026-04-28-西部材料分析.md",
-    "docs/03-实战复盘/2026-04-28-经验教训-信息查漏.md",
-    "docs/03-实战复盘/2026-04-28-大盘复盘.md",
-    "docs/03-实战复盘/00-目录.md",
-    "docs/02-交易系统/止损止盈纪律.md",
-    "docs/02-交易系统/做T决策框架.md",
-    "docs/02-交易系统/仓位管理规则.md",
-    "docs/02-交易系统/主线龙头战法-核心体系学习手册.md"
+    "docs/03-实战复盘/2026-04-29-早盘策略.md"
   ]
 }
