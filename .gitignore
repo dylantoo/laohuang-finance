@@ -6,3 +6,4 @@ site/              # MkDocs 构建输出
 *.pyc              # Python 缓存
 __pycache__/       # Python 缓存
 .obsidian/workspace.json  # Obsidian 工作区（每人不同）
+site/
