@@ -1,0 +1,136 @@
+# 老H学金融 — MkDocs Material 配置
+site_name: 老H学金融
+site_description: 老黄的专属金融学知识库 — 主线龙头战法 · 交易心理学 · 宏观周期
+site_author: 老黄
+site_url: https://laohuang-finance.github.io
+
+repo_url: https://github.com/laohuang-finance/laohuang-finance.github.io
+repo_name: 老H学金融
+
+# 深色金融风主题
+theme:
+  name: material
+  language: zh
+  font:
+    text: Noto Sans SC
+    code: JetBrains Mono
+  palette:
+    - scheme: slate
+      primary: indigo
+      accent: deep orange
+      toggle:
+        icon: material/weather-night
+        name: 切换亮色模式
+    - scheme: default
+      primary: indigo
+      accent: deep orange
+      toggle:
+        icon: material/weather-sunny
+        name: 切换暗色模式
+  features:
+    - navigation.tabs
+    - navigation.tabs.sticky
+    - navigation.sections
+    - navigation.top
+    - navigation.indexes
+    - navigation.path
+    - toc.follow
+    - search.highlight
+    - search.suggest
+    - content.code.copy
+    - content.code.annotate
+
+# 插件
+plugins:
+  - search:
+      lang:
+        - zh
+        - en
+  - glightbox:
+      touchNavigation: true
+      loop: false
+      effect: zoom
+      height: auto
+      width: auto
+  - git-revision-date-localized:
+      enable_creation_date: true
+      type: date
+      fallback_to_build_date: true
+  # - static-i18n:  # 暂时禁用，需要时再安装
+  #     default_language: zh
+
+# Markdown 扩展
+markdown_extensions:
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
+  - pymdownx.tabbed:
+      alternate_style: true
+  - pymdownx.highlight:
+      anchor_linenums: true
+  - pymdownx.inlinehilite
+  - pymdownx.keys
+  - pymdownx.snippets
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - tables
+  - toc:
+      permalink: true
+      title: 目录
+
+# 导航（对应 Obsidian 知识库目录结构）
+nav:
+  - 🏠 首页: 00-首页.md
+  - 📚 基础理论:
+    - 01-基础理论/00-目录.md
+    - 经济周期: 01-基础理论/经济周期.md
+    - 交易心理学: 01-基础理论/交易心理学.md
+    - 行为金融学: 01-基础理论/行为金融学.md
+    - 宏观经济: 01-基础理论/宏观经济.md
+    - 多元思维模型: 01-基础理论/多元思维模型.md
+    - 投资策略全景: 01-基础理论/投资策略全景.md
+  - ⚔️ 交易系统:
+    - 02-交易系统/00-目录.md
+    - 主线龙头战法-核心体系: 02-交易系统/主线龙头战法-核心体系学习手册.md
+    - 仓位管理规则: 02-交易系统/仓位管理规则.md
+    - 做T决策框架: 02-交易系统/做T决策框架.md
+    - 止损止盈纪律: 02-交易系统/止损止盈纪律.md
+  - 📊 实战复盘:
+    - 03-实战复盘/00-目录.md
+    - 2026-04-28-大盘复盘: 03-实战复盘/2026-04-28-大盘复盘.md
+    - 2026-04-28-信息查漏教训: 03-实战复盘/2026-04-28-经验教训-信息查漏.md
+    - 2026-04-28-西部材料分析: 03-实战复盘/2026-04-28-西部材料分析.md
+    - 2026-04-29-早盘策略: 03-实战复盘/2026-04-29-早盘策略.md
+  - 🎯 个股研究:
+    - 04-个股研究/00-目录.md
+    - 电连技术: 04-个股研究/电连技术.md
+    - 海大集团: 04-个股研究/海大集团.md
+    - 西部材料: 04-个股研究/西部材料.md
+  - 🧠 方法论:
+    - 05-方法论/00-目录.md
+    - 主线识别三要素: 05-方法论/主线识别三要素.md
+    - 回调vs退潮五维校验法: 05-方法论/回调vs退潮五维校验法.md
+    - 混沌期生存法则: 05-方法论/混沌期生存法则.md
+    - 123冷冻期硬规则: 05-方法论/123冷冻期硬规则.md
+  - 📖 读书笔记:
+    - 06-读书笔记/00-目录.md
+
+# 自定义
+extra:
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/laohuang-finance/laohuang-finance.github.io
+  generator: false
+
+copyright: Copyright &copy; 2026 老H学金融
+
+# 额外 CSS 自定义 (深色金融风)
+extra_css:
+  - assets/extra.css

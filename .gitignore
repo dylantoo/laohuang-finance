@@ -1,0 +1,8 @@
+# 老H学金融知识库
+
+.gitignore 规则
+site/              # MkDocs 构建输出
+.DS_Store          # macOS 系统文件
+*.pyc              # Python 缓存
+__pycache__/       # Python 缓存
+.obsidian/workspace.json  # Obsidian 工作区（每人不同）

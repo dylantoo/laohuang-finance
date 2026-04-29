@@ -1,0 +1,223 @@
+{
+  "main": {
+    "id": "96df8dfdbe3a7e66",
+    "type": "split",
+    "children": [
+      {
+        "id": "8f9b31bb7c25269c",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "958962b2a029dd7b",
+            "type": "leaf",
+            "state": {
+              "type": "empty",
+              "state": {},
+              "icon": "lucide-file",
+              "title": "新标签页"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "389fcb469aa5a358",
+    "type": "split",
+    "children": [
+      {
+        "id": "5becc62d5495768e",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "f47e55dd0e43091b",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical",
+                "autoReveal": false
+              },
+              "icon": "lucide-folder-closed",
+              "title": "文件列表"
+            }
+          },
+          {
+            "id": "bde11735f610d2c8",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-search",
+              "title": "搜索"
+            }
+          },
+          {
+            "id": "78826e2aedc00e56",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {},
+              "icon": "lucide-bookmark",
+              "title": "书签"
+            }
+          }
+        ],
+        "currentTab": 1
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "9a528a6adc302af2",
+    "type": "split",
+    "children": [
+      {
+        "id": "eb31777dba16bef6",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "69b43603ac01a11e",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "03-实战复盘/2026-04-28-西部材料分析.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-coming-in",
+              "title": "2026-04-28-西部材料分析 的反向链接列表"
+            }
+          },
+          {
+            "id": "1bff3dc3616630f9",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "03-实战复盘/2026-04-28-西部材料分析.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-going-out",
+              "title": "2026-04-28-西部材料分析 的出链列表"
+            }
+          },
+          {
+            "id": "f26cff73b824a881",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-tags",
+              "title": "标签"
+            }
+          },
+          {
+            "id": "75dcf0a0e5e8c1e6",
+            "type": "leaf",
+            "state": {
+              "type": "all-properties",
+              "state": {
+                "sortOrder": "frequency",
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-archive",
+              "title": "添加笔记属性"
+            }
+          },
+          {
+            "id": "8e87aad2b3390705",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "03-实战复盘/2026-04-28-西部材料分析.md",
+                "followCursor": false,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-list",
+              "title": "2026-04-28-西部材料分析 的大纲"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:打开快速切换": false,
+      "graph:查看关系图谱": false,
+      "canvas:新建白板": false,
+      "daily-notes:打开/创建今天的日记": false,
+      "templates:插入模板": false,
+      "command-palette:打开命令面板": false,
+      "bases:新建数据库": false
+    }
+  },
+  "active": "958962b2a029dd7b",
+  "lastOpenFiles": [
+    "site/assets/javascripts/glightbox.min.js",
+    "site/assets/stylesheets/glightbox.min.css",
+    "site/search/search_index.json",
+    "site/search",
+    "site/知识库/05-方法论/建仓路线图模板/index.html",
+    "site/知识库/05-方法论/建仓路线图模板",
+    "site/知识库/05-方法论",
+    "site/知识库",
+    "site/06-读书笔记/00-目录/index.html",
+    "site/06-读书笔记/00-目录",
+    "site/06-读书笔记",
+    "site/assets/images/favicon.png",
+    "docs/04-个股研究/盈峰环境.md",
+    "docs/05-方法论/个股分析流程.md",
+    "docs/知识库/05-方法论/建仓路线图模板.md",
+    "docs/2026-04-29-早报.md",
+    "docs/04-个股研究/中兴通讯.md",
+    "docs/06-读书笔记/00-目录.md",
+    "docs/00-首页.md",
+    "docs/05-方法论/混沌期生存法则.md",
+    "docs/05-方法论/主线识别三要素.md",
+    "docs/05-方法论/回调vs退潮五维校验法.md",
+    "docs/05-方法论/123冷冻期硬规则.md",
+    "docs/05-方法论/00-目录.md",
+    "docs/04-个股研究/西部材料.md",
+    "docs/04-个股研究/电连技术.md",
+    "docs/04-个股研究/海大集团.md",
+    "docs/04-个股研究/00-目录.md",
+    "docs/03-实战复盘/2026-04-29-早盘策略.md",
+    "docs/03-实战复盘/2026-04-28-西部材料分析.md",
+    "docs/03-实战复盘/2026-04-28-经验教训-信息查漏.md",
+    "docs/03-实战复盘/2026-04-28-大盘复盘.md",
+    "docs/03-实战复盘/00-目录.md",
+    "docs/02-交易系统/止损止盈纪律.md",
+    "docs/02-交易系统/做T决策框架.md",
+    "docs/02-交易系统/仓位管理规则.md",
+    "docs/02-交易系统/主线龙头战法-核心体系学习手册.md"
+  ]
+}
