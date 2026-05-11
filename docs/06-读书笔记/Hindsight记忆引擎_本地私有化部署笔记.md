@@ -320,5 +320,113 @@ print('Recall:', [r.text for r in r2.results])
 
 ---
 
-*本文档由 H（赛博黑猫）于 2026-05-09 在部署过程中编写*
-*基于 Hindsight v0.6.1 + Ollama qwen2.5:7b*
+---
+
+## 九、Hermes Agent 集成（2026-05-10 更新）
+
+> 将 Hindsight 注册为 Hermes 的语义记忆工具，替代内置 2200 字符上限的 memory 工具。
+
+### 9.1 架构选型：方案 A vs 方案 B
+
+| 方案 | 做法 | 风险 | 选择 |
+|:----|:----|:----|:----:|
+| **A（✅ 已选）** | 新增 `hindsight_memory` tool，双轨并行 | 低 — 删除一个文件即可回滚 | ✔️ |
+| B | 替换内置 `memory` 工具，修改 `run_agent.py` | 高 — 影响所有 agent，难回滚 | ❌ |
+
+### 9.2 文件结构
+
+```
+~/.hermes/hermes-agent/
+  tools/hindsight_memory_tool.py    ← 新增，343 行
+```
+
+- **依赖**：`subprocess curl`（REST API 调用）+ `~/.hindsight-venv/bin/python3`（retain/reflect 用 SDK）
+- **注册方式**：标准 `registry.register()`，toolset=`memory`，emoji=`🧠`
+- **无侵入**：不修改 `run_agent.py`、`memory_tool.py`、`toolsets.py`
+
+### 9.3 三个操作
+
+| 操作 | 说明 | 实现方式 | LLM Token 消耗 |
+|:----|:----|:--------|:--------------:|
+| `retain` | 存入记忆 | Python SDK（subprocess 调用 hindsight-client） | ~2,088 input |
+| `recall` | 语义检索 | REST POST + curl | **0**（纯向量检索） |
+| `reflect` | 深度反思 | Python SDK | ~2,600 input |
+
+### 9.4 健康检查 & 兜底机制
+
+```python
+def check_hindsight_available() -> bool:
+    # curl /health，3s 超时
+    return result.stdout.strip() == "200"
+```
+
+- 每次调用前先做健康检查
+- **Hindsight 不可用** → 返回错误 + 提示使用内置 `memory` 工具
+- **retain 超时 (90s)** → 提示 qwen2.5:7b 可能正在加载
+
+### 9.5 踩坑记录
+
+#### 9.5.1 curl 必须追加 URL
+```python
+cmd.append(url)  # 这一行容易被忘掉！
+# 缺失会导致 curl: (2) no URL specified
+```
+
+#### 9.5.2 recall 端点正确路径
+```python
+POST /v1/default/banks/{bank_id}/memories/recall
+# 不是 /recall，也不是 GET 方式
+```
+
+#### 9.5.3 retain 端点正确路径
+```python
+POST /v1/default/banks/{bank_id}/files/retain
+# 不是 /memories/retain（会返回 405 Method Not Allowed）
+```
+
+#### 9.5.4 SDK 参数签名 vs REST 参数
+- `client.recall()` 的参数叫 `max_tokens`（不是 `max_results`），`budget`（不是 `k`）
+- REST API `POST /recall` 的参数叫 `k`（不是 `max_tokens`）
+
+### 9.6 使用示例
+
+```python
+# 1. 存入
+result = client.retain(
+    bank_id='hermes',
+    content='用户是苏州人，喜欢炒股和写代码',
+    context='用户基本信息'
+)
+# → 成功，消耗 2,194 tokens
+
+# 2. 等待 10-30s（异步 consolidation）
+
+# 3. 召回
+result = client.recall(
+    bank_id='hermes',
+    query='hp 老黄 苏州 炒股',
+    max_tokens=2000
+)
+# → 返回 8 条结果，包含 entity/observation/experience 三种类型
+```
+
+### 9.7 配置参考
+
+| 环境变量 | 默认值 | 说明 |
+|:---------|:-------|:-----|
+| `HINDSIGHT_API_URL` | `http://localhost:8888` | Hindsight 服务地址 |
+| `HINDSIGHT_VENV_PYTHON` | `~/.hindsight-venv/bin/python3` | Python SDK 执行器 |
+| DEFAULT_BANK | `hermes` | 默认记忆 bank |
+
+### 9.8 状态总结（2026-05-10）
+
+| 项目 | 状态 |
+|:----|:----:|
+| Docker 容器 `hindsight` | ✅ 运行中 |
+| qwen2.5:7b 模型 | ✅ 已加载 |
+| `hindsight_memory` tool 注册 | ✅ `registry.get_entry()` 可见 |
+| retain → recall 闭环 | ✅ 验证通过 |
+| 健康检查 + 兜底 | ✅ 已配置 |
+| 内置 memory 工具 | ✅ 保留作为 fallback |
+
+*Hindsight v0.6.1 + Ollama qwen2.5:7b + Hermes Agent 集成完成*
