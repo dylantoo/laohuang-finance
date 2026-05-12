@@ -4,24 +4,21 @@
     "type": "split",
     "children": [
       {
-        "id": "8f9b31bb7c25269c",
+        "id": "157d2b35a3ce30dc",
         "type": "tabs",
         "children": [
           {
-            "id": "958962b2a029dd7b",
+            "id": "dfae7a87bf6c4dc1",
             "type": "leaf",
             "state": {
-              "type": "canvas",
+              "type": "markdown",
               "state": {
-                "file": "未命名.canvas",
-                "viewState": {
-                  "x": 0,
-                  "y": 0,
-                  "zoom": 0
-                }
+                "file": "2026-05-12.md",
+                "mode": "source",
+                "source": false
               },
-              "icon": "lucide-layout-dashboard",
-              "title": "未命名"
+              "icon": "lucide-file",
+              "title": "2026-05-12"
             }
           }
         ]
@@ -77,7 +74,8 @@
               "title": "书签"
             }
           }
-        ]
+        ],
+        "currentTab": 2
       }
     ],
     "direction": "horizontal",
@@ -186,9 +184,15 @@
       "bases:新建数据库": false
     }
   },
-  "active": "f47e55dd0e43091b",
+  "active": "dfae7a87bf6c4dc1",
   "lastOpenFiles": [
+    "docs/04-个股研究/长川科技.md",
+    "docs/01-基础理论/量价关系.md",
     "未命名.canvas",
+    "2026-05-12.md",
+    "未命名.base",
+    "未命名 1.base",
+    "docs/03-实战复盘/2026-05-06-收盘复盘.md",
     "docs/03-实战复盘/2026-04-30-早报.md",
     "site/assets/javascripts/glightbox.min.js",
     "site/assets/stylesheets/glightbox.min.css",
@@ -198,8 +202,6 @@
     "site/知识库/05-方法论/建仓路线图模板",
     "site/知识库/05-方法论",
     "site/知识库",
-    "site/06-读书笔记/00-目录/index.html",
-    "site/06-读书笔记/00-目录",
     "site/assets/images/favicon.png",
     "docs/03-实战复盘/2026-04-29-盘中分析.md",
     "docs/03-实战复盘/2026-04-29-早报.md",
@@ -221,9 +223,6 @@
     "docs/05-方法论/回调vs退潮五维校验法.md",
     "docs/05-方法论/123冷冻期硬规则.md",
     "docs/05-方法论/00-目录.md",
-    "docs/04-个股研究/西部材料.md",
-    "docs/04-个股研究/电连技术.md",
-    "docs/04-个股研究/海大集团.md",
-    "docs/04-个股研究/00-目录.md"
+    "docs/04-个股研究/西部材料.md"
   ]
 }
