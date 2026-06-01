@@ -4,21 +4,17 @@
     "type": "split",
     "children": [
       {
-        "id": "157d2b35a3ce30dc",
+        "id": "e20c9871b6f8fa0a",
         "type": "tabs",
         "children": [
           {
-            "id": "dfae7a87bf6c4dc1",
+            "id": "d1cfbc6386f6c9f2",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "2026-05-12.md",
-                "mode": "source",
-                "source": false
-              },
+              "type": "empty",
+              "state": {},
               "icon": "lucide-file",
-              "title": "2026-05-12"
+              "title": "新标签页"
             }
           }
         ]
@@ -74,12 +70,11 @@
               "title": "书签"
             }
           }
-        ],
-        "currentTab": 2
+        ]
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 374.5
   },
   "right": {
     "id": "9a528a6adc302af2",
@@ -184,8 +179,22 @@
       "bases:新建数据库": false
     }
   },
-  "active": "dfae7a87bf6c4dc1",
+  "active": "f47e55dd0e43091b",
   "lastOpenFiles": [
+    "site/assets/javascripts/glightbox.min.js",
+    "site/assets/stylesheets/glightbox.min.css",
+    "site/search/search_index.json",
+    "site/search",
+    "site/知识库/05-方法论/建仓路线图模板/index.html",
+    "site/知识库/05-方法论/建仓路线图模板",
+    "site/知识库/05-方法论",
+    "site/知识库",
+    "site/06-读书笔记/威科夫操盘法/index.html",
+    "site/06-读书笔记/Hindsight记忆引擎_本地私有化部署笔记/index.html",
+    "site/06-读书笔记/00-目录/index.html",
+    "site/assets/images/favicon.png",
+    "docs/03-实战复盘/2026-06-01-收盘复盘.md",
+    "2026-05-12.md",
     "docs/03-实战复盘/2026-05-14-尾盘分析.md",
     "docs/03-实战复盘/2026-05-14-盘中分析.md",
     "docs/03-实战复盘/2026-05-13-收盘复盘.md",
@@ -196,20 +205,8 @@
     "docs/04-个股研究/长川科技.md",
     "docs/01-基础理论/量价关系.md",
     "未命名.canvas",
-    "2026-05-12.md",
-    "未命名.base",
-    "未命名 1.base",
     "docs/03-实战复盘/2026-05-06-收盘复盘.md",
     "docs/03-实战复盘/2026-04-30-早报.md",
-    "site/assets/javascripts/glightbox.min.js",
-    "site/assets/stylesheets/glightbox.min.css",
-    "site/search/search_index.json",
-    "site/search",
-    "site/知识库/05-方法论/建仓路线图模板/index.html",
-    "site/知识库/05-方法论/建仓路线图模板",
-    "site/知识库/05-方法论",
-    "site/知识库",
-    "site/assets/images/favicon.png",
     "docs/03-实战复盘/2026-04-29-盘中分析.md",
     "docs/03-实战复盘/2026-04-29-早报.md",
     "docs/03-实战复盘/2026-04-28-收盘复盘.md",
@@ -221,8 +218,6 @@
     "docs/04-个股研究/盈峰环境.md",
     "docs/05-方法论/个股分析流程.md",
     "docs/知识库/05-方法论/建仓路线图模板.md",
-    "docs/2026-04-29-早报.md",
-    "docs/04-个股研究/中兴通讯.md",
-    "docs/06-读书笔记/00-目录.md"
+    "docs/2026-04-29-早报.md"
   ]
 }
