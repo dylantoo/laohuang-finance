@@ -4,11 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "e20c9871b6f8fa0a",
+        "id": "af6af6c45e6258d9",
         "type": "tabs",
         "children": [
           {
-            "id": "d1cfbc6386f6c9f2",
+            "id": "811de15c1a2f5802",
             "type": "leaf",
             "state": {
               "type": "empty",
@@ -179,8 +179,9 @@
       "bases:新建数据库": false
     }
   },
-  "active": "f47e55dd0e43091b",
+  "active": "811de15c1a2f5802",
   "lastOpenFiles": [
+    "SCHEMA.md",
     "docs/03-实战复盘/2026-06-09-主线龙头筛选.md",
     "docs/05-方法论/WorkBuddy多Agent投资团队体验.md",
     "docs/06-工具与资源/腾讯WorkBuddy多Agent投资团队实测.md",
@@ -217,7 +218,6 @@
     "docs/05-方法论/连板开板战法.md",
     "docs/04-个股研究/宏和科技.md",
     "docs/04-个股研究/长川科技.md",
-    "docs/01-基础理论/量价关系.md",
     "未命名.canvas"
   ]
 }
