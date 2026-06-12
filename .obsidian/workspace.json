@@ -4,11 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "af6af6c45e6258d9",
+        "id": "a4fb8cfbad2739f8",
         "type": "tabs",
         "children": [
           {
-            "id": "811de15c1a2f5802",
+            "id": "483f070fe36c771d",
             "type": "leaf",
             "state": {
               "type": "empty",
@@ -179,7 +179,7 @@
       "bases:新建数据库": false
     }
   },
-  "active": "811de15c1a2f5802",
+  "active": "483f070fe36c771d",
   "lastOpenFiles": [
     "docs/03-实战复盘/2026-06-11-主线龙头筛选.md",
     "SCHEMA.md",
